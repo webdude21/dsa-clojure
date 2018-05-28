@@ -16,3 +16,10 @@
 (deftest a-test-fibonacci-even-sum
   (testing "Fibonacci-seq even sum"
     (is (= 4613732 (even-fibonacci-numbers-sum 4000000)))))
+
+(deftest a-test-largest-palindrome-product
+  (testing "Should find the largest palindrome product"
+    (are [input expected]
+      (= expected (largest-palindrome-product input))
+      2 9009
+      3 906609)))
